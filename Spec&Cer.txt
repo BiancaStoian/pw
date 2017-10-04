@@ -1,0 +1,13 @@
+Tema: Travel Bucket List
+
+Cerinte:
+
+- User-ul se inregistreaza si se poate loga
+- User-ul isi poate crea propria lista 
+- User-ul poate lasa impresii din vacanta
+
+Specificatii:
+
+- Se poate reordona lista
+- Se poate adauga/elimina din lista
+- Se pot vizualiza destinatiile in ordine alfabetica
