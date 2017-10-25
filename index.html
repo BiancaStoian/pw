@@ -26,21 +26,18 @@
           <li><a href="about.html">About</a></li>
           <li> <a href="gallery.html">Gallery</a>
             <ul>
-              <li><a href="#">Europe</a></li>
-              <li><a href="#">Africa</a></li>
+              <li><a href="europe.html">Europe</a></li>
               <li> <a href="#">America</a>
                 <ul>
-                  <li><a href="#">North America</a></li>
-                  <li><a href="#">Central America</a></li>
-				  <li><a href="#">South America</a></li>
+                  <li><a href="namerica.html">North America</a></li>
+				  <li><a href="samerica.html">South America</a></li>
                 </ul>
               </li>
-              <li><a href="#">Asia</a></li>
-			  <li><a href="#">Australia</a></li>
             </ul>
           </li>
           <li><a href="bucketList.html">My Bucket List</a></li>
           <li><a href="contacts.html">Contact us</a></li>
+		  <li><a onclick="document.getElementById('id01').style.display='block'"> Login </a></li>
         </ul>
       </nav>
       <div class="clear"></div>
@@ -49,37 +46,78 @@
     <div class="mp-slider">
       <ul class="items">
         <li><img src="images/slide-1.jpg" alt="">
-          <div class="banner"><span class="row-1"><b>Discover</b> the modern world</span><span class="row-2">With Your Own <b>Eyes</b></span></div>
+          <div class="banner"><span class="row-1">Discover the modern <b>world</b></span></div>
         </li>
         <li><img src="images/slide-2.jpg" alt="">
-          <div class="banner"><span class="row-1"><b>Learn</b> about history</span></div>
+          <div class="banner"><span class="row-1">Learn about <b>history</b></span></div>
         </li>
         <li><img src="images/slide-3.jpg" alt="">
-          <div class="banner"><span class="row-1"><b>Find</b> the beauties of nature</span></div>
+          <div class="banner"><span class="row-1">Find the beauties of <b>nature</b></span></div>
         </li>
       </ul>
       <a href="#" class="mp-prev"></a> <a href="#" class="mp-next"></a> </div>
     <!-- Content -->
     <section id="content">
-      <div class="container_12">
-        <article class="a1">
-          <div class="wrapper"> <img src="images/page1-img1.png" alt="" class="img-indent">
-            <div class="extra-wrap">
-              <h3> <span class="welcome">Welcome</span> </h3>
-              <p class="p1"> Traveling, traveling, traveling... Does this sound familiar? If the answer is yes, than you are on the right website. We are here to help you create your own travel bucket list! </p>
-            </div>
-          </div>
-        </article>
+		<p class="title2" align="center"> I haven't been everywhere, but it's on my list...</p>
+        <div class="text"> Does this sound familiar? If the answer is yes, than you are on the right website. We are here to help you create your own travel bucket list! Enjoy!</div>
+		<div align="center"><img src="images/page1-img1.jpg"></div>
+	</section>
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/page1-img1.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="containerlog">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+	<div class="clearfix">
+		<button type="submit" class="loginbtn">Login</button>
+        <button type="button" class="signupbtn" onclick="document.getElementById('id02').style.display='block';document.getElementById('id01').style.display='none'">Not registered?</button>
+	    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	</div>
+  </form>
+</div>
+
+<!-- The Modal (contains the Sign Up form) -->
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+	</div>
+    <div class="containerlog">
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="checkbox" checked="checked"> Remember me
+
+      <div class="clearfix">
+	    <button type="submit" class="signupbtn">Sign Up</button>
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
       </div>
-    </section>
+    </div>
+  </form>
+</div>
+
+
     <!-- Footer -->
     <footer>
-      <div class="copyright"> Website Template designed by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a> </div>
-      <ul class="social-list">
-        <li><a href="#"><img src="images/soc-icon-1.png" alt=""></a></li>
-        <li><a href="#"><img src="images/soc-icon-2.png" alt=""></a></li>
-        <li><a href="#"><img src="images/soc-icon-3.png" alt=""></a></li>
-      </ul>
+      <div class="copyright"> Website created by Bianca-Elena Stoian</div>
     </footer>
   </div>
 </div>
