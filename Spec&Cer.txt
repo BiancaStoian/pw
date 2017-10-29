@@ -23,4 +23,4 @@ Backend framework: PHP
 
 Baza de date: Mysql-Xampp
 
-Editor de text: Sublime text
+Editor de text: Notepad++
