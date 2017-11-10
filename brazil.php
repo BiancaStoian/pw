@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Travel Bucket List</title>
+<title>DivingClub | Gallery</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/prettyPhoto.css">
@@ -28,11 +28,11 @@
           <li><a href="about.html">About</a></li>
           <li> <a href="gallery.html">Gallery</a>
             <ul>
-              <li class="current"><a href="europe.html">Europe</a></li>
+              <li><a href="europe.html">Europe</a></li>
               <li> <a href="#">America</a>
                 <ul>
                   <li><a href="namerica.html">North America</a></li>
-				  <li><a href="samerica.html">South America</a></li>
+				  <li class="current"><a href="samerica.html">South America</a></li>
                 </ul>
               </li>
             </ul>
@@ -44,33 +44,23 @@
       </nav>
       <div class="clear"></div>
     </header>
-
-    <!-- Content -->
+	<!-- Content -->
 	<p></p>
-	<h3 align="center"> <span class="title">Europe</span> </h3>
-	<div class="row">
-		<p></p>
-		<div class="container">
-			<a href="romania.php"> <img src="images/romania.jpg" alt="Avatar" class="image" style="width:100%"> </a>
-			<div class="middle">
-				<div class="textOnImage">Romania</div>
-			</div>
+	<h3 align="center"> <span class="title">Brazil</span> </h3>
+	<div class="text">One of the world's most captivating places, Brazil is a country of powdery white-sand beaches, verdant rainforests and wild, rhythm-filled metropolises. </div>
+	<div class="container">
+		<div class="gallery cf">
+		<?php
+			$conn = mysqli_connect("localhost", "root", "", "poze");
+			$result = mysqli_query($conn, "select * from brazil");
+			$str = "";
+			while($row = mysqli_fetch_assoc($result)) {
+				$str .= '<div> <img src='.$row["poza"].' class="myPic" > </div>';
+			}
+			echo $str;
+			mysqli_close($conn);
+		?>
 		</div>
-		<p></p>
-		<div class="container">
-			<a href="italy.php"> <img src="images/italy.jpg" alt="Avatar" class="image" style="width:100%"> </a>
-			<div class="middle">
-				<div class="textOnImage">Italy</div>
-			</div>
-		</div>
-		<p></p>
-		<div class="container">
-			<a href="france.php"> <img src="images/france.jpg" alt="Avatar" class="image" style="width:100%"> </a>
-			<div class="middle">
-				<div class="textOnImage">France</div>
-			</div>
-		</div>
-		<p></p>
 	</div>
   </div>
 </div>

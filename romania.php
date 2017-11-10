@@ -4,13 +4,11 @@
 <title>Travel Bucket List</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/prettyPhoto.css">
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/superfish.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/tms-0.4.1.js"></script>
 <script src="js/slider.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <link rel="stylesheet" href="css/ie.css"> 
@@ -44,34 +42,23 @@
       </nav>
       <div class="clear"></div>
     </header>
-
     <!-- Content -->
-	<p></p>
-	<h3 align="center"> <span class="title">Europe</span> </h3>
-	<div class="row">
-		<p></p>
-		<div class="container">
-			<a href="romania.php"> <img src="images/romania.jpg" alt="Avatar" class="image" style="width:100%"> </a>
-			<div class="middle">
-				<div class="textOnImage">Romania</div>
-			</div>
+    <section id="content">
+		<h3 align="center"> <span class="title">Romania</span> </h3>
+		<div class="text">Rugged stone churches and dazzling monasteries dot a pristine landscape of rocky mountains and rolling hills. Transylvanian towns have stepped out of time, while vibrant Bucharest is all energy.</div>
+		<div class="gallery cf">
+		<?php
+			$conn = mysqli_connect("localhost", "root", "", "poze");
+			$result = mysqli_query($conn, "select * from romania");
+			$str = "";
+			while($row = mysqli_fetch_assoc($result)) {
+				$str .= '<div> <img src='.$row["poza"].' class="myPic" > </div>';
+			}
+			echo $str;
+			mysqli_close($conn);
+		?>
 		</div>
-		<p></p>
-		<div class="container">
-			<a href="italy.php"> <img src="images/italy.jpg" alt="Avatar" class="image" style="width:100%"> </a>
-			<div class="middle">
-				<div class="textOnImage">Italy</div>
-			</div>
-		</div>
-		<p></p>
-		<div class="container">
-			<a href="france.php"> <img src="images/france.jpg" alt="Avatar" class="image" style="width:100%"> </a>
-			<div class="middle">
-				<div class="textOnImage">France</div>
-			</div>
-		</div>
-		<p></p>
-	</div>
+	</section>
   </div>
 </div>
 </body>
