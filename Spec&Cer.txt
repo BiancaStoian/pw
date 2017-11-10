@@ -2,12 +2,25 @@ Tema: Travel Bucket List
 
 Cerinte:
 
-- User-ul se inregistreaza si se poate loga
-- User-ul isi poate crea propria lista 
+- O pagina de prezentare a site-ului
+- Pagini in care pot fi vizualizate destinatiile (grupate pe continente)
+- Pagina cu bucket list-ul
+- User-ul se poate inregistra
+- User-ul isi poate crea propria lista cu destinatii favorite (dintre cele prezentate pe site)
+- User-ul poate sterge o destinatie din lista
 - User-ul poate lasa impresii din vacanta
+- User-ul poate trimite mail administratorului pentru a sugera destinatii noi
+
 
 Specificatii:
 
-- Se poate reordona lista
-- Se poate adauga/elimina din lista
-- Se pot vizualiza destinatiile in ordine alfabetica
+Frontend framework: 
+1.HTML
+2.CSS
+3.JavaScript
+
+Backend framework: PHP
+
+Baza de date: Mysql-Xampp
+
+Editor de text: Notepad++
