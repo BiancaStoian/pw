@@ -498,12 +498,13 @@ section#content {
 }
 .col-11 {
 	float:left;
-	width:410px;
+	width:550px;
 	margin:0 40px 0 0;
+	padding-right: 100px;
 }
 .col-12 {
 	float:left;
-	width:410px;
+	width:550px;
 }
 .contnt-slider section {
 	background:#fff !important;
@@ -552,7 +553,7 @@ section#content {
 	max-width:30%;
 }
 .map_container {
-	padding:0 0 20px 0;
+	padding:0 0 20px 20px;
 }
 .map_container iframe {
 	width:410px;
@@ -571,15 +572,17 @@ section#content {
 	letter-spacing:-1px;
 	font-size:12px;
 	line-height:18px;
-	width:180px;
-	margin:0 40px 0 0;
-	font-size:18px;
+	width:160px;
+	margin:0 50px 0 20px;
+	font-size:14px;
 	line-height:30px;
 	text-transform:uppercase;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Merienda One', sans-serif;
 }
 .adress .dd {
 	font-size:14px;
+	text-align: right;
+	font-family: 'Merienda One', sans-serif;
 	line-height:25px;
 	color:#333;
 	overflow:hidden;
@@ -1382,4 +1385,20 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+}
+
+.addButton {
+    background-color: #ffb380;
+	font-family: 'Merienda One';
+    color: white;
+	width: 300px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }

@@ -4,6 +4,7 @@
 <title>Travel Bucket List | Contacts</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/forms.css">
 <link rel="stylesheet" href="css/prettyPhoto.css">
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/superfish.js"></script>
@@ -52,7 +53,7 @@
           <div class="wrapper">
             <div class="col-11">
               <div class="text" align="center">Postal Address</div>
-              <div class="map_container">
+              <div align="center" class="map_container">
 				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:370px;width:520px;'><div id='gmap_canvas' style='height:370px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(45.737666,21.236621000000013),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.737666,21.236621000000013)});infowindow = new google.maps.InfoWindow({content:'<strong>Travel Bucket List</strong><br>132, Liviu Rebreanu<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 			  </div>
               <div class="adress">
@@ -65,7 +66,7 @@
             </div>
             <div class="col-12">
               <div class="text" align="center">Feedback</div>
-              <form action="#" id="contact-form" method="post">
+              <form id="contact-form" method="post">
                 <fieldset>
                   <label class="email">
                     <input type="email" value="Email" onFocus="if(this.value=='Email'){this.value=''}" onBlur="if(this.value==''){this.value='Email'}">
@@ -86,11 +87,6 @@
     <!-- Footer -->
     <footer>
       <div class="copyright"> Website created by Bianca-Elena Stoian</div>
-      <ul class="social-list">
-        <li><a href="#"><img src="images/soc-icon-1.png" alt=""></a></li>
-        <li><a href="#"><img src="images/soc-icon-2.png" alt=""></a></li>
-        <li><a href="#"><img src="images/soc-icon-3.png" alt=""></a></li>
-      </ul>
     </footer>
   </div>
 </div>

@@ -59,7 +59,19 @@
 			mysqli_close($conn);
 		?>
 		</div>
+		<div align="center"><button class="addButton">Add to bucket list</button></div>
+		<pre> </pre>
+		<pre> </pre>
 	</section>
+	<!-- Footer -->
+    <footer>
+      <div class="copyright"> Website created by Bianca-Elena Stoian</div>
+      <ul class="social-list">
+        <li><a href="#"><img src="images/soc-icon-1.png" alt=""></a></li>
+        <li><a href="#"><img src="images/soc-icon-2.png" alt=""></a></li>
+        <li><a href="#"><img src="images/soc-icon-3.png" alt=""></a></li>
+      </ul>
+    </footer>
   </div>
 </div>
 </body>

@@ -12,30 +12,30 @@
 }
 #contact-form input {
 	display:block;
-	background:#000;
+	background:#ffc34d;
 	outline:none;
 	margin:0;
 	font-size:14px;
 	color:#fff;
 	border:none;
-	padding:9px 20px 10px 20px;
+	padding:9px 50px 10px 20px;
 	height:17px;
-	width:370px;
-	font-family: 'Open Sans', sans-serif;
+	width:500px;
+	font-family: 'Merienda One', sans-serif;
 	box-shadow:none !important;
 }
 #contact-form textarea {
 	display:block;
-	background:#000;
+	background:#cc99ff;
 	outline:none;
 	margin:0;
 	font-size:14px;
 	color:#fff;
 	border:none;
-	padding:9px 20px 10px 20px;
+	padding:9px 50px 10px 20px;
 	height:260px;
-	width:370px;
-	font-family: 'Open Sans', sans-serif;
+	width:500px;
+	font-family: 'Merienda One', sans-serif;
 	overflow:auto;
 	resize:vertical;
 }
