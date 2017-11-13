@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Travel Bucket List</title>
+<title>Travel Bucket List | My List</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/prettyPhoto.css">
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/superfish.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/tms-0.4.1.js"></script>
 <script src="js/slider.js"></script>
-<script src="js/album.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <link rel="stylesheet" href="css/ie.css"> 
@@ -27,7 +28,7 @@
           <li><a href="about.html">About</a></li>
           <li> <a href="gallery.html">Gallery</a>
             <ul>
-              <li class="current"><a href="europe.html">Europe</a></li>
+              <li><a href="europe.html">Europe</a></li>
               <li> <a href="#">America</a>
                 <ul>
                   <li><a href="namerica.html">North America</a></li>
@@ -36,7 +37,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="bucketList.html">My Bucket List</a></li>
+          <li class="current"><a href="bucketlist.php">My Bucket List</a></li>
           <li><a href="contacts.html">Contact us</a></li>
 		  <li><a onclick="document.getElementById('id01').style.display='block'"> Login </a></li>
         </ul>
@@ -45,25 +46,18 @@
     </header>
     <!-- Content -->
     <section id="content">
-		<h3 align="center"> <span class="title">France</span> </h3>
-		<p></p>
-		<div class="text">France seduces travellers with its unfalteringly familiar culture, 
-		woven around cafe terraces, village-square markets and lace-curtained bistros with their plat du 
-		jour chalked on the board.
-		</div>
-
-		<div class="gallery cf">
-			<div> <img src="images/paris.jpg" class="myPic"> </div>
-			<div> <img src="images/concorde.jpg" class="myPic" > </div>
-			<div> <img src="images/chambord.jpg" class="myPic"> </div>
-			<div> <img src="images/colmar.jpg" class="myPic"> </div>
-			<div> <img src="images/michel.jpg" class="myPic"> </div>
-			<div> <img src="images/provence.jpg" class="myPic"> </div>
-		</div>
-	</section>
+		<h3 align="center"> <span class="title">My Bucket List</span> </h3>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="copyright"> Website created by Bianca-Elena Stoian</div>
+      <ul class="social-list">
+        <li><a href="#"><img src="images/soc-icon-1.png" alt=""></a></li>
+        <li><a href="#"><img src="images/soc-icon-2.png" alt=""></a></li>
+        <li><a href="#"><img src="images/soc-icon-3.png" alt=""></a></li>
+      </ul>
+    </footer>
   </div>
 </div>
 </body>
 </html>
-
-

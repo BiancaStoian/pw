@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Travel Bucket List</title>
+<title>Travel Bucket List | USA</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/jquery-1.7.1.min.js"></script>
@@ -35,7 +35,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="bucketList.html">My Bucket List</a></li>
+          <li><a href="bucketlist.php">My Bucket List</a></li>
           <li><a href="contacts.html">Contact us</a></li>
 		  <li><a onclick="document.getElementById('id01').style.display='block'"> Login </a></li>
         </ul>
