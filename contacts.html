@@ -44,62 +44,44 @@
       </nav>
       <div class="clear"></div>
     </header>
-    <!-- Slider -->
-    <div class="mp-slider">
-      <ul class="items">
-        <li><img src="images/slide-1.jpg" alt="">
-          <div class="banner"><span class="row-1"><b>See</b> the Underwater World</span><span class="row-2">With Your Own <b>Eyes</b></span></div>
-        </li>
-        <li><img src="images/slide-2.jpg" alt="">
-          <div class="banner"><span class="row-1"><b>All</b> the Beauty</span><span class="row-2">of the Deep <b>Sea</b></span></div>
-        </li>
-        <li><img src="images/slide-3.jpg" alt="">
-          <div class="banner"><span class="row-1"><b>Find</b> the treasures</span><span class="row-2">of the water <b>World</b></span></div>
-        </li>
-      </ul>
-      <a href="#" class="mp-prev"></a> <a href="#" class="mp-next"></a> </div>
     <!-- Content -->
     <section id="content">
-      <div class="container_12">
+		<h3 align="center"> <span class="title">Contact us</span> </h3>
+		<div class="text"> Any complaints? Any suggestions? Don't hesitate to contact us. We try our best to satisfy all our travel buddies.</div>
         <article class="a2">
           <div class="wrapper">
             <div class="col-11">
-              <h3>Postal address</h3>
+              <div class="text" align="center">Postal Address</div>
               <div class="map_container">
-                <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-				 </div>
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:370px;width:520px;'><div id='gmap_canvas' style='height:370px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(45.737666,21.236621000000013),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.737666,21.236621000000013)});infowindow = new google.maps.InfoWindow({content:'<strong>Travel Bucket List</strong><br>132, Liviu Rebreanu<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			  </div>
               <div class="adress">
-                <div class="dt"> 9870 St Vincent Place, Glasgow, DC 45 Fr </div>
+                <div class="dt"> 132 Bv. Liviu Rebreanu, Timisoara </div>
                 <div class="extra-wrap">
-                  <div class="dd">Telephone: +1 800 603 6035</div>
-                  <div class="dd">E-mail: <a href="#">mail@demolink.org</a></div>
-                  <div class="dd">Skype: <a href="#">@skypename</a></div>
+                  <div class="dd">Telephone: +41254256</div>
+                  <div class="dd">E-mail: <a href="#">contact@tblist.com</a></div>
                 </div>
               </div>
             </div>
             <div class="col-12">
-              <h3>Feedback</h3>
+              <div class="text" align="center">Feedback</div>
               <form action="#" id="contact-form" method="post">
                 <fieldset>
-                  <label class="name">
-                    <input type="text" value="Your Name" onFocus="if(this.value=='Your Name'){this.value=''}" onBlur="if(this.value==''){this.value='Your Name'}">
-                  </label>
-                  <label class="phone">
-                    <input type="text" value="Telephone" onFocus="if(this.value=='Telephone'){this.value=''}" onBlur="if(this.value==''){this.value='Telephone'}">
-                  </label>
                   <label class="email">
                     <input type="email" value="Email" onFocus="if(this.value=='Email'){this.value=''}" onBlur="if(this.value==''){this.value='Email'}">
                   </label>
                   <label class="message">
                     <textarea onFocus="if(this.value=='Message'){this.value=''}" onBlur="if(this.value==''){this.value='Message'}">Message</textarea>
                   </label>
-                  <div class="btns"> <a class="button">Clear</a> <a class="button">Send</a> </div>
+				    <div class="btns">
+						<button class="cancelbtn">Clear</button>
+						<button class="loginbtn">Send</button>
+					</div>
                 </fieldset>
               </form>
             </div>
           </div>
         </article>
-      </div>
     </section>
     <!-- Footer -->
     <footer>
