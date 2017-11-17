@@ -38,7 +38,7 @@
             </ul>
           </li>
           <li class="current"><a href="bucketlist.php">My Bucket List</a></li>
-          <li><a href="contacts.html">Contact us</a></li>
+          <li><a href="contacts.php">Contact us</a></li>
 		  <li><a onclick="document.getElementById('id01').style.display='block'"> Login </a></li>
         </ul>
       </nav>
