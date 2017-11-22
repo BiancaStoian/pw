@@ -81,7 +81,18 @@
 	</div>
 	<?php  if (isset($_SESSION['username'])) : ?>
 		<div align="center">
-			<button onClick="add.php?name=$_SESSION['username']&country=$_GET['id']" class="addButton">Add to bucket list</button>
+			<?php 
+				$conn = mysqli_connect("localhost", "root", "", "poze");
+				$name = $_SESSION['username'];
+				$country = $_GET['id'];
+				$sql = "SELECT * from user_to_country where user_name='$name' AND country_id='$country'";
+				$result = mysqli_query($conn, $sql);
+				if ($result->num_rows == 0):
+			?>
+			<a href="add.php?name=<?php echo $_SESSION['username']?>&country=<?php echo $_GET['id']?>" class="addButton">Add to bucket list</a>
+			<?php else:?>
+			<a href="remove.php?name=<?php echo $_SESSION['username']?>&country=<?php echo $_GET['id']?>" class="addButton">Remove from bucket list</a>
+			<?php endif?>
 		</div>
 	<?php endif ?>
 	<pre> </pre>
