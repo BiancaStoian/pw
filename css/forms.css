@@ -16,7 +16,7 @@
 	outline:none;
 	margin:0;
 	font-size:14px;
-	color:#fff;
+	color:black;
 	border:none;
 	padding:9px 50px 10px 20px;
 	height:17px;
@@ -26,11 +26,11 @@
 }
 #contact-form textarea {
 	display:block;
-	background:#cc99ff;
+	background:#d9ffb3;
 	outline:none;
 	margin:0;
 	font-size:14px;
-	color:#fff;
+	color:black;
 	border:none;
 	padding:9px 50px 10px 20px;
 	height:260px;

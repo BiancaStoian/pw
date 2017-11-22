@@ -4,23 +4,24 @@
 	if (isset($_GET['logout'])) {
 		session_destroy();
 		unset($_SESSION['username']);
-		header("location: login.php");
+		header("location: index.php");
 	}
 
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Travel Bucket List | <?php echo $_GET['name']?></title>
+<title>Travel Bucket List</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/prettyPhoto.css">
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/superfish.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/tms-0.4.1.js"></script>
 <script src="js/slider.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
+<script>
+
+</script>
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <link rel="stylesheet" href="css/ie.css"> 
@@ -34,7 +35,7 @@
       <h1 class="logo"><a href="index.php">Travel Bucket List</a></h1>
       <nav>
         <ul class="sf-menu">
-          <li><a href="index.php">home</a></li>
+          <li class="current"><a href="index.php">home</a></li>
           <li><a href="about.php">About</a></li>
           <li> <a href="gallery.php">Gallery</a>
             <ul>
@@ -60,28 +61,31 @@
       </nav>
       <div class="clear"></div>
     </header>
-
+    <!-- Slider -->
+    <div class="mp-slider">
+      <ul class="items">
+        <li><img src="images/slide-1.jpg" alt="">
+          <div class="banner"><span class="row-1">Discover the modern <b>world</b></span></div>
+        </li>
+        <li><img src="images/slide-2.jpg" alt="">
+          <div class="banner"><span class="row-1">Learn about <b>history</b></span></div>
+        </li>
+        <li><img src="images/slide-3.jpg" alt="">
+          <div class="banner"><span class="row-1">Find the beauties of <b>nature</b></span></div>
+        </li>
+      </ul>
+      <a href="#" class="mp-prev"></a> <a href="#" class="mp-next"></a> </div>
     <!-- Content -->
-	<p></p>
-	<h3 align="center"> <span class="title"><?php echo $_GET['name']?></span> </h3>
-	<?php
-			$conn = mysqli_connect("localhost", "root", "", "poze");
-			$id_cont = $_GET['id'];
-			$result = mysqli_query($conn, "select * from countries where '$id_cont'=id_cont");
-			$str = "";
-			while($row = mysqli_fetch_assoc($result)) {
-				$str .= '<p></p>
-					<div class="container">
-						<a href="tara.php?nume='.$row['country'].'&id='.$row['id'].'&desc='.$row['desc'].'"> <img src='.$row["poza"].' alt="Avatar" class="image" style="width:100%"> </a>
-						<div class="middle">
-							<div class="textOnImage">'.$row["country"].'</div>
-						</div>
-					</div>';
-			}
-			echo $str;
-			mysqli_close($conn);
-	?>
-	<p></p>
+    <section id="content">
+		<p class="title2" align="center"> I haven't been everywhere, but it's on my list...</p>
+        <div class="text"> Does this sound familiar? If the answer is yes, than you are on the right website. We are here to help you create your own travel bucket list! Enjoy!</div>
+		<div align="center"><img src="images/page1-img1.jpg"></div>
+	</section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="copyright"> Website created by Bianca-Elena Stoian</div>
+    </footer>
   </div>
 </div>
 </body>

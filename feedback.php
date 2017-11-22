@@ -6,17 +6,16 @@ $email = $_POST['email'];
 $comment = $_POST['comment'];
 
 if(empty($email)) {
-	echo "Introduce?i email-ul!";
+	echo "Add your email!";
 	die();
 }
 
 if(empty($comment)) {
-	echo "Adaugati o recenzie!";
+	echo "Add some feedback!";
 	die();
 }
 
-$sql = "INSERT INTO feedback (Email, Feedback)
-	VALUES ('$email', '$comment')";
+$sql = "INSERT INTO feedback (Email, Feedback) VALUES ('$email', '$comment')";
 	
 if($conn->query($sql) === TRUE) {
 	echo "Mesaj receptionat!";

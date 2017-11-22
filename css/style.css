@@ -299,7 +299,6 @@ header {
 	background: url(../images/logo.png) no-repeat 0 0;
 	height:60px;
 	width:203px;
-	overflow:hidden;
 	text-indent:-99em;
 	display:block;
 }
@@ -1094,6 +1093,12 @@ table.fc-border-separate {
 	padding: 40px 70px 40px 70px;
 }
 
+.formtext {
+	font-size: 20px;
+	font-family: 'Merienda One';
+	font-weight: bold;
+}
+
 .textPink {
 	color: pink;
 	font-size: 25px;
@@ -1184,7 +1189,7 @@ table.fc-border-separate {
 .gallery > div > img {
   width: 400px;
   transition: .1s transform;
-  transform: translateZ(0); /* hack */
+  transform: translateZ(0); 
 }
 
 .gallery > div:hover {
@@ -1252,7 +1257,7 @@ input[type=text], input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #660000;
     box-sizing: border-box;
 }
 
@@ -1282,14 +1287,14 @@ button:hover {
 .signupbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #6699ff;
+    background-color: #558000;
 }
 
 /* Extra styles for the login button */
 .loginbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #bbff33;
+    background-color: #660000;
 }
 
 /* Center the image and position the close button */
@@ -1304,7 +1309,8 @@ img.avatar {
 }
 
 .containerlog {
-    padding: 16px;
+    padding: 15px;
+	line-height: 25px;
 }
 
 span.psw {
@@ -1312,27 +1318,23 @@ span.psw {
     padding-top: 16px;
 }
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
+	padding-top: 0px;
+    margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
     width: 30%; /* Could be more or less, depending on screen size */
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.modal-login {
+	background-color: #ffe6e6;
+	border: 2px solid #660000;
+}
+
+.modal-signup {
+	background-color: #e6ffb3;
+	border: 2px solid #558000;
 }
 
 /* The Close Button (x) */
@@ -1387,6 +1389,14 @@ span.psw {
     }
 }
 
+.sendbtn {
+    width: auto;
+    padding: 10px 18px;
+	color: black;
+    background-color: #dd99ff;
+	font-family: 'Merienda One';
+}
+
 .addButton {
     background-color: #ffb380;
 	font-family: 'Merienda One';
@@ -1401,4 +1411,58 @@ span.psw {
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonList {
+	font-family: 'Merienda One';
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.b1 {
+	background-color: #ffcccc;
+	width: 350px;
+}
+
+.b2 {
+    background-color: #b3ffd9;
+	width: 550px;
+}
+
+.b3 {
+    background-color: #dfbf9f;
+	width: 750px;
+}
+
+
+.b4 {
+    background-color: #ffbf80;
+	width: 550px;
+}  
+
+.b5 {
+    background-color: #ffff80;
+	width: 650px;
+} 
+
+.b6 {
+    background-color: #d9ffb3;
+	width: 450px;
+} 
+
+.user {
+	color: #cc0000;
+}
+
+.logout {
+	color: #ff6666;
+	padding-left: 10px;
 }
