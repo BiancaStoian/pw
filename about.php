@@ -72,15 +72,20 @@ $(function(){
     <section id="content">
 	  <p class="title" align="center"> About me </p>
         <p class="text"> My name is Bianca and I am 21 year old student who fell deeply in love with traveling. Here are my top reasons why traveling is important:</p>
-		<p align="center" class="textPink"> Pushes your educational horizons </p>
-		<p align="center" class="textGreen"> Connects us to other cultures and people </p>
-		<p align="center" class="textOrange"> Slows us down: gives us a break from our fast-paced lives </p>
-		<p align="center" class="textBlue"> Invites the opportunity to get lost and face one’s fears of the unknown </p>
-		<p align="center" class="textPurple"> Stokes curiosity and awakens our inner child by offering us new, “first-time” experiences </p>
-		<p align="center" class="textOranj"> Gives us time to heal, reduces stress and helps us regain enthusiasm for life </p>
-		<p align="center" class="textLightBlue"> Expands our awareness and introduces us to greater diversity </p>
-		<p align="center" class="textPinkish">Helps us break habits: physically and emotionally </p>
-		<p align="center" class="textYellow"> Gives you empathy for global suffering</p>
+		<?php
+			$conn = mysqli_connect("localhost", "root", "", "poze");
+			$result = mysqli_query($conn, "select * from text");
+			$str = "";
+			$count = 1;
+			while($row = mysqli_fetch_assoc($result)) {
+				$str .= '<p align="middle" class="text';
+				$str .= $count;
+				$str .= '"> '.$row["text"].' </p>';
+				$count = $count +  1;
+			}
+			echo $str;
+			mysqli_close($conn);
+		?>
 		<p class="text"> But still, why did I create this website? 
 		Because I like to be organised when it comes to traveling too: my bucket list must always be up to date.
 		When I see a new location that interests me, I have to decide straight away its priority in my bucket list. 

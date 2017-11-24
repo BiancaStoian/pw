@@ -55,10 +55,10 @@
     <div class="containerlog" >
 	  <?php include('errors.php'); ?>
 	  <label class="formtext">Username</label>
-	  <input type="text" placeholder="Enter Username" name="username" value="<?php echo $username; ?>">
+	  <input type="text" placeholder="Enter Username" name="username">
 		
       <label class="formtext">Email</label>
-      <input type="text" placeholder="Enter Email" name="email" value="<?php echo $mail; ?>">
+      <input type="text" placeholder="Enter Email" name="email">
 
       <label class="formtext">Password</label>
       <input type="password" placeholder="Enter Password" name="password1">

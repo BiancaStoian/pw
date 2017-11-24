@@ -36,7 +36,7 @@
       <nav>
         <ul class="sf-menu">
           <li><a href="index.php">home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.php">About</a></li>
           <li> <a href="gallery.php">Gallery</a>
             <ul>
               <li><a href="continent.php?name=Europe&id=1"> Europe</a></li>

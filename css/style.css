@@ -1099,7 +1099,7 @@ table.fc-border-separate {
 	font-weight: bold;
 }
 
-.textPink {
+.text1 {
 	color: pink;
 	font-size: 25px;
 	letter-spacing: 2px;
@@ -1107,7 +1107,7 @@ table.fc-border-separate {
 	font-weight: bold;
 }
 
-.textLightBlue {
+.text7 {
 	color: #00e6e6;
 	font-size: 25px;
 	letter-spacing: 2px;
@@ -1115,7 +1115,7 @@ table.fc-border-separate {
 	font-weight: bold;
 }
 
-.textBlue {
+.text4 {
 	color: #6699ff;
 	font-size: 25px;
 	letter-spacing: 2px;
@@ -1123,7 +1123,7 @@ table.fc-border-separate {
 	font-weight: bold;
 }
 
-.textOrange {
+.text3 {
 	color: #ffc34d;
 	font-size: 25px;
 	letter-spacing: 2px;
@@ -1131,7 +1131,7 @@ table.fc-border-separate {
 	font-weight: bold;
 }
 
-.textGreen {
+.text2 {
 	color: #bbff33;
 	font-size: 25px;
 	letter-spacing: 2px;
@@ -1139,7 +1139,7 @@ table.fc-border-separate {
 	font-weight: bold;
 } 
 
-.textOranj {
+.text6 {
 	color: #ffb380;
 	font-size: 25px;
 	letter-spacing: 2px;
@@ -1147,7 +1147,7 @@ table.fc-border-separate {
 	font-weight: bold;
 } 
 
-.textYellow{
+.text9{
 	color: #e6e600;
 	font-size: 25px;
 	letter-spacing: 2px;
@@ -1155,7 +1155,7 @@ table.fc-border-separate {
 	font-weight: bold;
 } 
 
-.textPurple{
+.text5{
 	color: #cc99ff;
 	font-size: 25px;
 	letter-spacing: 2px;
@@ -1163,7 +1163,7 @@ table.fc-border-separate {
 	font-weight: bold;
 }
 
-.textPinkish {
+.text8 {
 	color: #ff9999;
 	font-size: 25px;
 	letter-spacing: 2px;
@@ -1322,7 +1322,7 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
 	padding-top: 0px;
-    margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 5% auto; /* 5% from the top */
     width: 30%; /* Could be more or less, depending on screen size */
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
